@@ -1,11 +1,52 @@
-﻿Imports System.Net.Mail
+﻿Imports System.Drawing.Text
+Imports System.Net.Mail
+Imports System.Windows.Forms.VisualStyles.VisualStyleElement
+Imports Middle_Eastern_Pizza.Form2
 
 Public Class Form3
     Dim Menu1(2, 13) As String
-    Dim Total As Decimal
+    Public Total As Decimal
+
+    Dim Name1 As String = "Meat-Aholic"
+    Dim Name2 As String = "Straight from the Sea"
+    Dim Name3 As String = "Autumn Mush of Rooms"
+    Dim Name4 As String = "Middle Eastern Pizza"
+    Dim Name5 As String = "Honolulu Retreat"
+    Dim Name6 As String = "Chocolate Suprise"
+    Dim Name7 As String = "Classic"
+    Dim Name8 As String = "Lahmacun"
+    Dim Name9 As String = "Grass"
+    Dim Name10 As String = "Hootie-Tootie"
+    Dim Name11 As String = "Johannesburg Hornswoogle"
+    Dim Name12 As String = "Tropical Sunrise"
+    Dim Name13 As String = "Algerian Pizza"
+    Dim Name14 As String = "Za'atar"
+
+
+
 
 
     Private Sub Form3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        meataholic.Text = Name1
+        sea.Text = Name2
+        autumn.Text = Name3
+        middlepizza.Text = Name4
+        honolulu.Text = Name5
+        chocolate.Text = Name6
+        classic.Text = Name7
+        lahmacun.Text = Name8
+        vegan.Text = Name9
+        rich.Text = Name10
+        truffle.Text = Name11
+        tropical.Text = Name12
+        algeria.Text = Name13
+        zaatar.Text = Name14
+
+
+
+
+
         'store names of pizzas as variables
         Menu1(0, 0) = "Meat-Aholic"
         Menu1(0, 1) = "Straight from the Sea"
@@ -22,36 +63,32 @@ Public Class Form3
         Menu1(0, 12) = "Algerian Pizza"
         Menu1(0, 13) = "Za'atar"
 
-        'store prices of pizzas
+        'make for loop to include cost in array
+        For v = 0 To 13
+            Menu1(1, v) = 8.5 'standard pizzas
+        Next
 
-        Menu1(1, 0) = 8.5
-        Menu1(1, 1) = 8.5
-        Menu1(1, 2) = 8.5
-        Menu1(1, 3) = 8.5
-        Menu1(1, 4) = 8.5
-        Menu1(1, 5) = 8.5
-        Menu1(1, 6) = 8.5
-        Menu1(1, 7) = 13.5
-        Menu1(1, 8) = 13.5
-        Menu1(1, 9) = 13.5
-        Menu1(1, 10) = 13.5
-        Menu1(1, 11) = 13.5
-        Menu1(1, 12) = 13.5
-        Menu1(1, 13) = 13.5
-
-
-
+        For v = 7 To 13
+            Menu1(1, v) = 13.5 'premium pizzas
+        Next
 
 
     End Sub
 
+    Private Sub Totalnew()
+
+        Total = 0
+        For x = 0 To 13
+            Total += Val(Menu1(1, x)) * Val(Menu1(2, x))
+
+        Next
+
+        Total += Form2.Delivery
+
+        totaltext.Text = Total.ToString("C") 'make grand total appear on label with currency
 
 
-    'total = 0
-    'for x = 0 to 13
-    'total = total + (val(menu(1,x)) * val(menu(2,x))
-    'next
-    'total = total + delivery
+    End Sub
 
 
 
@@ -76,23 +113,34 @@ Public Class Form3
 
 
 
+
+
     Private Sub complete_Click(sender As Object, e As EventArgs) Handles complete.Click
         Me.Hide() 'Hide the order menu
         Form4.Show() 'Show the final order menu
     End Sub
 
     Private Sub menubutton_Click(sender As Object, e As EventArgs) Handles menbutton.Click
-        Me.Hide() 'Hide the order menu
+        Application.Restart() 'Hide the order menu
         Form1.Show() 'Return to main menu
     End Sub
     Private Sub meatcombobox_SelectedIndexChanged(sender As Object, e As EventArgs) Handles meatcombobox.SelectedIndexChanged
         'get quanity and store in array
         Menu1(2, 0) = Val(meatcombobox.Text)
+        Receipt.Pizzas.Add("Meat-Aholic")
+        Receipt.PizzaQuanity.Add(Val(meatcombobox.Text))
+        Receipt.PizzaCost.Add(Menu1(1, 0) * Menu1(2, 0))
+        Totalnew()
+
     End Sub
     Private Sub seacombobox_SelectedIndexChanged(sender As Object, e As EventArgs) Handles seacombobox.SelectedIndexChanged
         'get quanity and store in array
         Menu1(2, 1) = Val(seacombobox.Text)
         'Calculate and display line total
+        Receipt.Pizzas.Add("Straight from the Sea")
+        Receipt.PizzaQuanity.Add(Val(seacombobox.Text))
+        Receipt.PizzaCost.Add(Menu1(1, 1) * Menu1(2, 1))
+        Totalnew()
 
 
     End Sub
@@ -100,62 +148,122 @@ Public Class Form3
     Private Sub autumncombobox_SelectedIndexChanged(sender As Object, e As EventArgs) Handles autumncombobox.SelectedIndexChanged
         'get quanity and store in array
         Menu1(2, 2) = Val(autumncombobox.Text)
+        Receipt.Pizzas.Add("Autumn Mush of Rooms")
+        Receipt.PizzaQuanity.Add(Val(autumncombobox.Text))
+        Receipt.PizzaCost.Add(Menu1(1, 2) * Menu1(2, 2))
+        Totalnew()
+
 
     End Sub
 
     Private Sub middlecombobox_SelectedIndexChanged(sender As Object, e As EventArgs) Handles middlecombobox.SelectedIndexChanged
         'get quanity and store in array
         Menu1(2, 3) = Val(middlecombobox.Text)
+        Receipt.Pizzas.Add("Middle Eastern Pizza")
+        Receipt.PizzaQuanity.Add(Val(middlecombobox.Text))
+        Receipt.PizzaCost.Add(Menu1(1, 3) * Menu1(2, 3))
+        Totalnew()
+
     End Sub
 
     Private Sub honolulucombobox_SelectedIndexChanged(sender As Object, e As EventArgs) Handles honolulucombobox.SelectedIndexChanged
         'get quanity and store in array
         Menu1(2, 4) = Val(honolulucombobox.Text)
+        Receipt.Pizzas.Add("Honolulu Retreat")
+        Receipt.PizzaQuanity.Add(Val(honolulucombobox.Text))
+        Receipt.PizzaCost.Add(Menu1(1, 4) * Menu1(2, 4))
+        Totalnew()
+
     End Sub
 
     Private Sub chocolatecombobox_SelectedIndexChanged(sender As Object, e As EventArgs) Handles chocolatecombobox.SelectedIndexChanged
         'get quanity and store in array
         Menu1(2, 5) = Val(chocolatecombobox.Text)
+        Receipt.Pizzas.Add("Chocolate Suprise")
+        Receipt.PizzaQuanity.Add(Val(chocolatecombobox.Text))
+        Receipt.PizzaCost.Add(Menu1(1, 5) * Menu1(2, 5))
+        Totalnew()
+
     End Sub
 
     Private Sub classiccombobox_SelectedIndexChanged(sender As Object, e As EventArgs) Handles classiccombobox.SelectedIndexChanged
         'get quanity and store in array
         Menu1(2, 6) = Val(classiccombobox.Text)
+        Receipt.Pizzas.Add("Classic")
+        Receipt.PizzaQuanity.Add(Val(classiccombobox.Text))
+        Receipt.PizzaCost.Add(Menu1(1, 6) * Menu1(2, 6))
+        Totalnew()
+
     End Sub
 
     Private Sub lahmacuncmbox_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lahmacuncmbox.SelectedIndexChanged
         'get quanity and store in array
         Menu1(2, 7) = Val(lahmacuncmbox.Text)
+        Receipt.Pizzas.Add("Lahmacun")
+        Receipt.PizzaQuanity.Add(Val(lahmacuncmbox.Text))
+        Receipt.PizzaCost.Add(Menu1(1, 7) * Menu1(2, 7))
+        Totalnew()
+
     End Sub
 
     Private Sub vegancmbox_SelectedIndexChanged(sender As Object, e As EventArgs) Handles vegancmbox.SelectedIndexChanged
         'get quanity and store in array
         Menu1(2, 8) = Val(vegancmbox.Text)
+        Receipt.Pizzas.Add("Grass")
+        Receipt.PizzaQuanity.Add(Val(vegancmbox.Text))
+        Receipt.PizzaCost.Add(Menu1(1, 8) * Menu1(2, 8))
+        Totalnew()
+
     End Sub
 
     Private Sub hootiecmbox_SelectedIndexChanged(sender As Object, e As EventArgs) Handles hootiecmbox.SelectedIndexChanged
         'get quanity and store in array
         Menu1(2, 9) = Val(hootiecmbox.Text)
+        Receipt.Pizzas.Add("Hootie Tootie")
+        Receipt.PizzaQuanity.Add(Val(hootiecmbox.Text))
+        Receipt.PizzaCost.Add(Menu1(1, 9) * Menu1(2, 9))
+        Totalnew()
+
     End Sub
 
     Private Sub trufflecmbox_SelectedIndexChanged(sender As Object, e As EventArgs) Handles trufflecmbox.SelectedIndexChanged
         'get quanity and store in array
         Menu1(2, 10) = Val(trufflecmbox.Text)
+        Receipt.Pizzas.Add("Lots of Truffle")
+        Receipt.PizzaQuanity.Add(Val(trufflecmbox.Text))
+        Receipt.PizzaCost.Add(Menu1(1, 10) * Menu1(2, 10))
+        Totalnew()
+
     End Sub
 
     Private Sub tropicalcmbox_SelectedIndexChanged(sender As Object, e As EventArgs) Handles tropicalcmbox.SelectedIndexChanged
         'get quanity and store in array
         Menu1(2, 11) = Val(tropicalcmbox.Text)
+        Receipt.Pizzas.Add("Tropical Sunrise")
+        Receipt.PizzaQuanity.Add(Val(tropicalcmbox.Text))
+        Receipt.PizzaCost.Add(Menu1(1, 11) * Menu1(2, 11))
+        Totalnew()
+
     End Sub
 
     Private Sub algeriacmbox_SelectedIndexChanged(sender As Object, e As EventArgs) Handles algeriacmbox.SelectedIndexChanged
         'get quanity and store in array
         Menu1(2, 12) = Val(algeriacmbox.Text)
+        Receipt.Pizzas.Add("Algerian Pizza")
+        Receipt.PizzaQuanity.Add(Val(algeriacmbox.Text))
+        Receipt.PizzaCost.Add(Menu1(1, 12) * Menu1(2, 12))
+        Totalnew()
+
     End Sub
 
     Private Sub zaatarcmbox_SelectedIndexChanged(sender As Object, e As EventArgs) Handles zaatarcmbox.SelectedIndexChanged
         'get quanity and store in array
         Menu1(2, 13) = Val(zaatarcmbox.Text)
+        Receipt.Pizzas.Add("Za'atar")
+        Receipt.PizzaQuanity.Add(Val(zaatarcmbox.Text))
+        Receipt.PizzaCost.Add(Menu1(1, 13) * Menu1(2, 13))
+        Totalnew()
+
     End Sub
 End Class
 
@@ -232,3 +340,21 @@ End Class
 
 
 'need array, loop and conditionals (else, if) think I have them all after incoporating the loop
+
+
+'store prices of pizzas
+
+' Menu1(1, 0) = 8.5
+'Menu1(1, 1) = 8.5
+'Menu1(1, 2) = 8.5
+'Menu1(1, 3) = 8.5
+'Menu1(1, 4) = 8.5
+'Menu1(1, 5) = 8.5
+'Menu1(1, 6) = 8.5
+'Menu1(1, 7) = 13.5
+'Menu1(1, 8) = 13.5
+'Menu1(1, 9) = 13.5
+'Menu1(1, 10) = 13.5
+'Menu1(1, 11) = 13.5
+'Menu1(1, 12) = 13.5
+'Menu1(1, 13) = 13.5

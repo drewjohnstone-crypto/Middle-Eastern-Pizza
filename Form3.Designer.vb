@@ -68,9 +68,10 @@ Partial Class Form3
         ' 
         pizzamen.AutoSize = True
         pizzamen.Font = New Font("Times New Roman", 30F, FontStyle.Bold)
-        pizzamen.Location = New Point(12, 19)
+        pizzamen.Location = New Point(17, 32)
+        pizzamen.Margin = New Padding(4, 0, 4, 0)
         pizzamen.Name = "pizzamen"
-        pizzamen.Size = New Size(218, 45)
+        pizzamen.Size = New Size(334, 68)
         pizzamen.TabIndex = 0
         pizzamen.Text = "Pizza Menu"
         ' 
@@ -78,9 +79,10 @@ Partial Class Form3
         ' 
         standard.AutoSize = True
         standard.Font = New Font("Times New Roman", 20F, FontStyle.Bold)
-        standard.Location = New Point(15, 108)
+        standard.Location = New Point(21, 180)
+        standard.Margin = New Padding(4, 0, 4, 0)
         standard.Name = "standard"
-        standard.Size = New Size(226, 31)
+        standard.Size = New Size(326, 45)
         standard.TabIndex = 1
         standard.Text = "Standard $8.50 ea"
         ' 
@@ -88,9 +90,10 @@ Partial Class Form3
         ' 
         meataholic.AutoSize = True
         meataholic.Font = New Font("Times New Roman", 15F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        meataholic.Location = New Point(15, 162)
+        meataholic.Location = New Point(21, 270)
+        meataholic.Margin = New Padding(4, 0, 4, 0)
         meataholic.Name = "meataholic"
-        meataholic.Size = New Size(111, 23)
+        meataholic.Size = New Size(164, 35)
         meataholic.TabIndex = 2
         meataholic.Text = "Meat-aholic"
         ' 
@@ -98,9 +101,10 @@ Partial Class Form3
         ' 
         sea.AutoSize = True
         sea.Font = New Font("Times New Roman", 15F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        sea.Location = New Point(15, 202)
+        sea.Location = New Point(21, 337)
+        sea.Margin = New Padding(4, 0, 4, 0)
         sea.Name = "sea"
-        sea.Size = New Size(191, 23)
+        sea.Size = New Size(284, 35)
         sea.TabIndex = 3
         sea.Text = "Straight from the Sea"
         ' 
@@ -108,9 +112,10 @@ Partial Class Form3
         ' 
         autumn.AutoSize = True
         autumn.Font = New Font("Times New Roman", 15F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        autumn.Location = New Point(15, 242)
+        autumn.Location = New Point(21, 403)
+        autumn.Margin = New Padding(4, 0, 4, 0)
         autumn.Name = "autumn"
-        autumn.Size = New Size(211, 23)
+        autumn.Size = New Size(327, 35)
         autumn.TabIndex = 4
         autumn.Text = "Autumn Mush of Rooms"
         ' 
@@ -118,9 +123,10 @@ Partial Class Form3
         ' 
         middlepizza.AutoSize = True
         middlepizza.Font = New Font("Times New Roman", 15F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        middlepizza.Location = New Point(15, 287)
+        middlepizza.Location = New Point(21, 478)
+        middlepizza.Margin = New Padding(4, 0, 4, 0)
         middlepizza.Name = "middlepizza"
-        middlepizza.Size = New Size(191, 23)
+        middlepizza.Size = New Size(284, 35)
         middlepizza.TabIndex = 5
         middlepizza.Text = "Middle Eastern Pizza"
         ' 
@@ -128,9 +134,10 @@ Partial Class Form3
         ' 
         honolulu.AutoSize = True
         honolulu.Font = New Font("Times New Roman", 15F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        honolulu.Location = New Point(15, 334)
+        honolulu.Location = New Point(21, 557)
+        honolulu.Margin = New Padding(4, 0, 4, 0)
         honolulu.Name = "honolulu"
-        honolulu.Size = New Size(156, 23)
+        honolulu.Size = New Size(233, 35)
         honolulu.TabIndex = 6
         honolulu.Text = "Honolulu Retreat"
         ' 
@@ -138,19 +145,21 @@ Partial Class Form3
         ' 
         chocolate.AutoSize = True
         chocolate.Font = New Font("Times New Roman", 15F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        chocolate.Location = New Point(15, 379)
+        chocolate.Location = New Point(21, 632)
+        chocolate.Margin = New Padding(4, 0, 4, 0)
         chocolate.Name = "chocolate"
-        chocolate.Size = New Size(162, 23)
+        chocolate.Size = New Size(256, 35)
         chocolate.TabIndex = 7
-        chocolate.Text = "Chocolate Suprise"
+        chocolate.Text = "Chocolate Surprise"
         ' 
         ' classic
         ' 
         classic.AutoSize = True
         classic.Font = New Font("Times New Roman", 15F, FontStyle.Bold)
-        classic.Location = New Point(15, 424)
+        classic.Location = New Point(21, 707)
+        classic.Margin = New Padding(4, 0, 4, 0)
         classic.Name = "classic"
-        classic.Size = New Size(69, 23)
+        classic.Size = New Size(104, 35)
         classic.TabIndex = 8
         classic.Text = "Classic"
         ' 
@@ -158,9 +167,10 @@ Partial Class Form3
         ' 
         lahmacun.AutoSize = True
         lahmacun.Font = New Font("Times New Roman", 15F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        lahmacun.Location = New Point(383, 162)
+        lahmacun.Location = New Point(547, 270)
+        lahmacun.Margin = New Padding(4, 0, 4, 0)
         lahmacun.Name = "lahmacun"
-        lahmacun.Size = New Size(97, 23)
+        lahmacun.Size = New Size(148, 35)
         lahmacun.TabIndex = 9
         lahmacun.Text = "Lahmacun"
         ' 
@@ -168,9 +178,10 @@ Partial Class Form3
         ' 
         vegan.AutoSize = True
         vegan.Font = New Font("Times New Roman", 15F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        vegan.Location = New Point(383, 202)
+        vegan.Location = New Point(547, 337)
+        vegan.Margin = New Padding(4, 0, 4, 0)
         vegan.Name = "vegan"
-        vegan.Size = New Size(60, 23)
+        vegan.Size = New Size(88, 35)
         vegan.TabIndex = 10
         vegan.Text = "Grass"
         ' 
@@ -178,145 +189,175 @@ Partial Class Form3
         ' 
         rich.AutoSize = True
         rich.Font = New Font("Times New Roman", 15F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        rich.Location = New Point(383, 242)
+        rich.Location = New Point(547, 403)
+        rich.Margin = New Padding(4, 0, 4, 0)
         rich.Name = "rich"
-        rich.Size = New Size(127, 23)
+        rich.Size = New Size(187, 35)
         rich.TabIndex = 11
         rich.Text = "Hootie-Tootie"
         ' 
         ' meatcombobox
         ' 
+        meatcombobox.DropDownStyle = ComboBoxStyle.DropDownList
         meatcombobox.FormattingEnabled = True
         meatcombobox.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5"})
-        meatcombobox.Location = New Point(228, 162)
+        meatcombobox.Location = New Point(326, 270)
+        meatcombobox.Margin = New Padding(4, 5, 4, 5)
         meatcombobox.Name = "meatcombobox"
-        meatcombobox.Size = New Size(121, 23)
+        meatcombobox.Size = New Size(171, 33)
         meatcombobox.TabIndex = 12
         ' 
         ' seacombobox
         ' 
+        seacombobox.DropDownStyle = ComboBoxStyle.DropDownList
         seacombobox.FormattingEnabled = True
         seacombobox.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5"})
-        seacombobox.Location = New Point(228, 202)
+        seacombobox.Location = New Point(326, 337)
+        seacombobox.Margin = New Padding(4, 5, 4, 5)
         seacombobox.Name = "seacombobox"
-        seacombobox.Size = New Size(121, 23)
+        seacombobox.Size = New Size(171, 33)
         seacombobox.TabIndex = 13
         ' 
         ' autumncombobox
         ' 
+        autumncombobox.DropDownStyle = ComboBoxStyle.DropDownList
         autumncombobox.FormattingEnabled = True
         autumncombobox.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5"})
-        autumncombobox.Location = New Point(228, 242)
+        autumncombobox.Location = New Point(326, 403)
+        autumncombobox.Margin = New Padding(4, 5, 4, 5)
         autumncombobox.Name = "autumncombobox"
-        autumncombobox.Size = New Size(121, 23)
+        autumncombobox.Size = New Size(171, 33)
         autumncombobox.TabIndex = 14
         ' 
         ' middlecombobox
         ' 
+        middlecombobox.DropDownStyle = ComboBoxStyle.DropDownList
         middlecombobox.FormattingEnabled = True
         middlecombobox.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5"})
-        middlecombobox.Location = New Point(228, 290)
+        middlecombobox.Location = New Point(326, 483)
+        middlecombobox.Margin = New Padding(4, 5, 4, 5)
         middlecombobox.Name = "middlecombobox"
-        middlecombobox.Size = New Size(121, 23)
+        middlecombobox.Size = New Size(171, 33)
         middlecombobox.TabIndex = 15
         ' 
         ' honolulucombobox
         ' 
+        honolulucombobox.DropDownStyle = ComboBoxStyle.DropDownList
         honolulucombobox.FormattingEnabled = True
         honolulucombobox.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5"})
-        honolulucombobox.Location = New Point(228, 337)
+        honolulucombobox.Location = New Point(326, 562)
+        honolulucombobox.Margin = New Padding(4, 5, 4, 5)
         honolulucombobox.Name = "honolulucombobox"
-        honolulucombobox.Size = New Size(121, 23)
+        honolulucombobox.Size = New Size(171, 33)
         honolulucombobox.TabIndex = 16
         ' 
         ' chocolatecombobox
         ' 
+        chocolatecombobox.DropDownStyle = ComboBoxStyle.DropDownList
         chocolatecombobox.FormattingEnabled = True
         chocolatecombobox.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5"})
-        chocolatecombobox.Location = New Point(228, 379)
+        chocolatecombobox.Location = New Point(326, 632)
+        chocolatecombobox.Margin = New Padding(4, 5, 4, 5)
         chocolatecombobox.Name = "chocolatecombobox"
-        chocolatecombobox.Size = New Size(121, 23)
+        chocolatecombobox.Size = New Size(171, 33)
         chocolatecombobox.TabIndex = 17
         ' 
         ' classiccombobox
         ' 
+        classiccombobox.DropDownStyle = ComboBoxStyle.DropDownList
         classiccombobox.FormattingEnabled = True
         classiccombobox.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5"})
-        classiccombobox.Location = New Point(228, 424)
+        classiccombobox.Location = New Point(326, 707)
+        classiccombobox.Margin = New Padding(4, 5, 4, 5)
         classiccombobox.Name = "classiccombobox"
-        classiccombobox.Size = New Size(121, 23)
+        classiccombobox.Size = New Size(171, 33)
         classiccombobox.TabIndex = 18
         ' 
         ' lahmacuncmbox
         ' 
+        lahmacuncmbox.DropDownStyle = ComboBoxStyle.DropDownList
         lahmacuncmbox.FormattingEnabled = True
         lahmacuncmbox.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5"})
-        lahmacuncmbox.Location = New Point(535, 162)
+        lahmacuncmbox.Location = New Point(764, 270)
+        lahmacuncmbox.Margin = New Padding(4, 5, 4, 5)
         lahmacuncmbox.Name = "lahmacuncmbox"
-        lahmacuncmbox.Size = New Size(121, 23)
+        lahmacuncmbox.Size = New Size(171, 33)
         lahmacuncmbox.TabIndex = 19
         ' 
         ' vegancmbox
         ' 
+        vegancmbox.DropDownStyle = ComboBoxStyle.DropDownList
         vegancmbox.FormattingEnabled = True
         vegancmbox.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5"})
-        vegancmbox.Location = New Point(535, 202)
+        vegancmbox.Location = New Point(764, 337)
+        vegancmbox.Margin = New Padding(4, 5, 4, 5)
         vegancmbox.Name = "vegancmbox"
-        vegancmbox.Size = New Size(121, 23)
+        vegancmbox.Size = New Size(171, 33)
         vegancmbox.TabIndex = 20
         ' 
         ' hootiecmbox
         ' 
+        hootiecmbox.DropDownStyle = ComboBoxStyle.DropDownList
         hootiecmbox.FormattingEnabled = True
         hootiecmbox.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5"})
-        hootiecmbox.Location = New Point(535, 245)
+        hootiecmbox.Location = New Point(764, 408)
+        hootiecmbox.Margin = New Padding(4, 5, 4, 5)
         hootiecmbox.Name = "hootiecmbox"
-        hootiecmbox.Size = New Size(121, 23)
+        hootiecmbox.Size = New Size(171, 33)
         hootiecmbox.TabIndex = 21
         ' 
         ' trufflecmbox
         ' 
+        trufflecmbox.DropDownStyle = ComboBoxStyle.DropDownList
         trufflecmbox.FormattingEnabled = True
         trufflecmbox.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5"})
-        trufflecmbox.Location = New Point(535, 290)
+        trufflecmbox.Location = New Point(764, 483)
+        trufflecmbox.Margin = New Padding(4, 5, 4, 5)
         trufflecmbox.Name = "trufflecmbox"
-        trufflecmbox.Size = New Size(121, 23)
+        trufflecmbox.Size = New Size(171, 33)
         trufflecmbox.TabIndex = 22
         ' 
         ' algeriacmbox
         ' 
+        algeriacmbox.DropDownStyle = ComboBoxStyle.DropDownList
         algeriacmbox.FormattingEnabled = True
         algeriacmbox.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5"})
-        algeriacmbox.Location = New Point(535, 379)
+        algeriacmbox.Location = New Point(764, 632)
+        algeriacmbox.Margin = New Padding(4, 5, 4, 5)
         algeriacmbox.Name = "algeriacmbox"
-        algeriacmbox.Size = New Size(121, 23)
+        algeriacmbox.Size = New Size(171, 33)
         algeriacmbox.TabIndex = 23
         ' 
         ' tropicalcmbox
         ' 
+        tropicalcmbox.DropDownStyle = ComboBoxStyle.DropDownList
         tropicalcmbox.FormattingEnabled = True
         tropicalcmbox.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5"})
-        tropicalcmbox.Location = New Point(535, 334)
+        tropicalcmbox.Location = New Point(764, 557)
+        tropicalcmbox.Margin = New Padding(4, 5, 4, 5)
         tropicalcmbox.Name = "tropicalcmbox"
-        tropicalcmbox.Size = New Size(121, 23)
+        tropicalcmbox.Size = New Size(171, 33)
         tropicalcmbox.TabIndex = 24
         ' 
         ' zaatarcmbox
         ' 
+        zaatarcmbox.DropDownStyle = ComboBoxStyle.DropDownList
         zaatarcmbox.FormattingEnabled = True
         zaatarcmbox.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5"})
-        zaatarcmbox.Location = New Point(535, 424)
+        zaatarcmbox.Location = New Point(764, 707)
+        zaatarcmbox.Margin = New Padding(4, 5, 4, 5)
         zaatarcmbox.Name = "zaatarcmbox"
-        zaatarcmbox.Size = New Size(121, 23)
+        zaatarcmbox.Size = New Size(171, 33)
         zaatarcmbox.TabIndex = 25
         ' 
         ' truffle
         ' 
         truffle.AutoSize = True
         truffle.Font = New Font("Times New Roman", 15F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        truffle.Location = New Point(383, 290)
+        truffle.Location = New Point(547, 483)
+        truffle.Margin = New Padding(4, 0, 4, 0)
         truffle.Name = "truffle"
-        truffle.Size = New Size(140, 23)
+        truffle.Size = New Size(207, 35)
         truffle.TabIndex = 26
         truffle.Text = "Lot's of Truffle"
         ' 
@@ -324,9 +365,10 @@ Partial Class Form3
         ' 
         tropical.AutoSize = True
         tropical.Font = New Font("Times New Roman", 15F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        tropical.Location = New Point(383, 337)
+        tropical.Location = New Point(547, 562)
+        tropical.Margin = New Padding(4, 0, 4, 0)
         tropical.Name = "tropical"
-        tropical.Size = New Size(146, 23)
+        tropical.Size = New Size(221, 35)
         tropical.TabIndex = 27
         tropical.Text = "Tropical Sunrise"
         ' 
@@ -334,9 +376,10 @@ Partial Class Form3
         ' 
         algeria.AutoSize = True
         algeria.Font = New Font("Times New Roman", 15F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        algeria.Location = New Point(383, 382)
+        algeria.Location = New Point(547, 637)
+        algeria.Margin = New Padding(4, 0, 4, 0)
         algeria.Name = "algeria"
-        algeria.Size = New Size(134, 23)
+        algeria.Size = New Size(195, 35)
         algeria.TabIndex = 28
         algeria.Text = "Algerian Pizza"
         ' 
@@ -344,9 +387,10 @@ Partial Class Form3
         ' 
         zaatar.AutoSize = True
         zaatar.Font = New Font("Times New Roman", 15F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        zaatar.Location = New Point(383, 427)
+        zaatar.Location = New Point(547, 712)
+        zaatar.Margin = New Padding(4, 0, 4, 0)
         zaatar.Name = "zaatar"
-        zaatar.Size = New Size(73, 23)
+        zaatar.Size = New Size(105, 35)
         zaatar.TabIndex = 29
         zaatar.Text = "Za'atar"
         ' 
@@ -354,9 +398,10 @@ Partial Class Form3
         ' 
         gourmet.AutoSize = True
         gourmet.Font = New Font("Times New Roman", 20F, FontStyle.Bold)
-        gourmet.Location = New Point(383, 108)
+        gourmet.Location = New Point(547, 180)
+        gourmet.Margin = New Padding(4, 0, 4, 0)
         gourmet.Name = "gourmet"
-        gourmet.Size = New Size(236, 31)
+        gourmet.Size = New Size(342, 45)
         gourmet.TabIndex = 30
         gourmet.Text = "Gourmet $13.50 ea"
         ' 
@@ -365,9 +410,10 @@ Partial Class Form3
         pricetext.AutoEllipsis = True
         pricetext.AutoSize = True
         pricetext.Font = New Font("Times New Roman", 20F, FontStyle.Bold)
-        pricetext.Location = New Point(28, 492)
+        pricetext.Location = New Point(40, 820)
+        pricetext.Margin = New Padding(4, 0, 4, 0)
         pricetext.Name = "pricetext"
-        pricetext.Size = New Size(143, 31)
+        pricetext.Size = New Size(206, 45)
         pricetext.TabIndex = 31
         pricetext.Text = "Total Price"
         ' 
@@ -375,18 +421,20 @@ Partial Class Form3
         ' 
         totaltext.AutoSize = True
         totaltext.Font = New Font("Times New Roman", 20F, FontStyle.Bold)
-        totaltext.Location = New Point(48, 532)
+        totaltext.Location = New Point(69, 887)
+        totaltext.Margin = New Padding(4, 0, 4, 0)
         totaltext.Name = "totaltext"
-        totaltext.Size = New Size(93, 31)
+        totaltext.Size = New Size(136, 45)
         totaltext.TabIndex = 32
         totaltext.Text = "[Price]"
         ' 
         ' menbutton
         ' 
         menbutton.Font = New Font("Times New Roman", 20.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        menbutton.Location = New Point(476, 500)
+        menbutton.Location = New Point(680, 833)
+        menbutton.Margin = New Padding(4, 5, 4, 5)
         menbutton.Name = "menbutton"
-        menbutton.Size = New Size(267, 63)
+        menbutton.Size = New Size(381, 105)
         menbutton.TabIndex = 35
         menbutton.Text = "Back to Main Menu"
         menbutton.UseVisualStyleBackColor = True
@@ -394,9 +442,10 @@ Partial Class Form3
         ' complete
         ' 
         complete.Font = New Font("Times New Roman", 20.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        complete.Location = New Point(228, 500)
+        complete.Location = New Point(326, 833)
+        complete.Margin = New Padding(4, 5, 4, 5)
         complete.Name = "complete"
-        complete.Size = New Size(228, 63)
+        complete.Size = New Size(326, 105)
         complete.TabIndex = 37
         complete.Text = "Complete Order"
         complete.UseVisualStyleBackColor = True
@@ -412,12 +461,12 @@ Partial Class Form3
         ' 
         ' Form3
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.Menu
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
-        ClientSize = New Size(755, 663)
+        ClientSize = New Size(1079, 1050)
         Controls.Add(complete)
         Controls.Add(menbutton)
         Controls.Add(totaltext)
@@ -453,6 +502,7 @@ Partial Class Form3
         Controls.Add(meataholic)
         Controls.Add(standard)
         Controls.Add(pizzamen)
+        Margin = New Padding(4, 5, 4, 5)
         Name = "Form3"
         Text = "Form3"
         CType(ErrorProvider1, ComponentModel.ISupportInitialize).EndInit()
