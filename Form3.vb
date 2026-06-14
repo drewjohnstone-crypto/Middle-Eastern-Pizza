@@ -317,11 +317,7 @@ End Class
 'cornelioustotal()
 'End Sub
 
-'Private Sub cornelioustotal()
-'total'
-' Dim Total As Decimal
-'  Total = (Shopping(1, 0) * Shopping(2, 0)) + (Shopping(1, 1) * Shopping(2, 1)) + (Shopping(1, 2) * Shopping(2, 2))
-'   lblTotal.Text = Total.ToString("C")
+
 
 
 'End Sub
