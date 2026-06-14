@@ -17,7 +17,7 @@ Public Class Form3
     Dim Name8 As String = "Lahmacun"
     Dim Name9 As String = "Grass"
     Dim Name10 As String = "Hootie-Tootie"
-    Dim Name11 As String = "Johannesburg Hornswoogle"
+    Dim Name11 As String = "Lots of Truffle"
     Dim Name12 As String = "Tropical Sunrise"
     Dim Name13 As String = "Algerian Pizza"
     Dim Name14 As String = "Za'atar"
@@ -121,7 +121,7 @@ Public Class Form3
     End Sub
 
     Private Sub menubutton_Click(sender As Object, e As EventArgs) Handles menbutton.Click
-        Application.Restart() 'Hide the order menu
+        Me.Hide() 'Hide the order menu
         Form1.Show() 'Return to main menu
     End Sub
     Private Sub meatcombobox_SelectedIndexChanged(sender As Object, e As EventArgs) Handles meatcombobox.SelectedIndexChanged
