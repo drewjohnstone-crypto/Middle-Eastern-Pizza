@@ -338,19 +338,4 @@ End Class
 'need array, loop and conditionals (else, if) think I have them all after incoporating the loop
 
 
-'store prices of pizzas
 
-' Menu1(1, 0) = 8.5
-'Menu1(1, 1) = 8.5
-'Menu1(1, 2) = 8.5
-'Menu1(1, 3) = 8.5
-'Menu1(1, 4) = 8.5
-'Menu1(1, 5) = 8.5
-'Menu1(1, 6) = 8.5
-'Menu1(1, 7) = 13.5
-'Menu1(1, 8) = 13.5
-'Menu1(1, 9) = 13.5
-'Menu1(1, 10) = 13.5
-'Menu1(1, 11) = 13.5
-'Menu1(1, 12) = 13.5
-'Menu1(1, 13) = 13.5
