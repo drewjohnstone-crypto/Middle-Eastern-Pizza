@@ -309,20 +309,6 @@ End Class
 'lblMilkTotal.Text = (Shopping(1, 1) * Shopping(2, 1)).ToString("C")
 'End Sub
 
-'Private Sub cboEggs_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboEggs.SelectedIndexChanged
-'get quanity and store in array
-'Shopping(2, 2) = Val(cboEggs.Text)
-'calculate and display line total
-'lblEggsTotal.Text = (Shopping(1, 2) * Shopping(2, 2)).ToString("C")
-'cornelioustotal()
-'End Sub
-
-
-
-
-'End Sub
-'End Class
-
 
 
 'hint: I am not going yo say maybe this is on your assesment it is on the assesmenet. THIS METHOD:
