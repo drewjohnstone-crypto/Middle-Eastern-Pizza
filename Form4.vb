@@ -8,4 +8,9 @@
         Me.Hide()
         Form5.Show()
     End Sub
+
+    Private Sub menubutton_Click(sender As Object, e As EventArgs) Handles menubutton.Click
+        Me.Close()
+        Form3.Show()
+    End Sub
 End Class

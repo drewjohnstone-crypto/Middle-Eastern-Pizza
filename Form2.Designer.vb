@@ -70,7 +70,7 @@ Partial Class Form2
         ' 
         address.AutoSize = True
         address.Font = New Font("Times New Roman", 20F, FontStyle.Bold)
-        address.Location = New Point(31, 293)
+        address.Location = New Point(31, 387)
         address.Margin = New Padding(4, 0, 4, 0)
         address.Name = "address"
         address.Size = New Size(173, 45)
@@ -102,7 +102,7 @@ Partial Class Form2
         ' addresstext
         ' 
         addresstext.Font = New Font("Times New Roman", 20F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        addresstext.Location = New Point(311, 278)
+        addresstext.Location = New Point(334, 384)
         addresstext.Margin = New Padding(4, 5, 4, 5)
         addresstext.Name = "addresstext"
         addresstext.Size = New Size(281, 53)
@@ -111,7 +111,7 @@ Partial Class Form2
         ' MaskedTextBox1
         ' 
         MaskedTextBox1.Font = New Font("Times New Roman", 20F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        MaskedTextBox1.Location = New Point(311, 145)
+        MaskedTextBox1.Location = New Point(334, 272)
         MaskedTextBox1.Margin = New Padding(4, 5, 4, 5)
         MaskedTextBox1.Mask = "(999) 000-0000"
         MaskedTextBox1.Name = "MaskedTextBox1"
@@ -122,7 +122,7 @@ Partial Class Form2
         ' 
         Customername.AutoSize = True
         Customername.Font = New Font("Times New Roman", 20.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Customername.Location = New Point(31, 413)
+        Customername.Location = New Point(31, 157)
         Customername.Margin = New Padding(4, 0, 4, 0)
         Customername.Name = "Customername"
         Customername.Size = New Size(137, 47)
@@ -133,7 +133,7 @@ Partial Class Form2
         ' 
         phonen.AutoSize = True
         phonen.Font = New Font("Times New Roman", 20.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        phonen.Location = New Point(31, 157)
+        phonen.Location = New Point(31, 278)
         phonen.Margin = New Padding(4, 0, 4, 0)
         phonen.Name = "phonen"
         phonen.Size = New Size(299, 47)
@@ -143,7 +143,7 @@ Partial Class Form2
         ' TextBox1
         ' 
         TextBox1.Font = New Font("Times New Roman", 20F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        TextBox1.Location = New Point(311, 400)
+        TextBox1.Location = New Point(334, 157)
         TextBox1.Margin = New Padding(4, 5, 4, 5)
         TextBox1.Name = "TextBox1"
         TextBox1.Size = New Size(281, 53)

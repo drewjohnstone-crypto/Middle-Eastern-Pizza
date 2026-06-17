@@ -34,6 +34,7 @@ Partial Class Form4
         Label4 = New Label()
         receipt = New Button()
         backmenu = New Button()
+        menubutton = New Button()
         CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
@@ -44,17 +45,19 @@ Partial Class Form4
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Location = New Point(628, 291)
+        Label3.Location = New Point(897, 485)
+        Label3.Margin = New Padding(4, 0, 4, 0)
         Label3.Name = "Label3"
-        Label3.Size = New Size(0, 15)
+        Label3.Size = New Size(0, 25)
         Label3.TabIndex = 2
         ' 
         ' PictureBox3
         ' 
         PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), Image)
-        PictureBox3.Location = New Point(640, 388)
+        PictureBox3.Location = New Point(914, 647)
+        PictureBox3.Margin = New Padding(4, 5, 4, 5)
         PictureBox3.Name = "PictureBox3"
-        PictureBox3.Size = New Size(91, 61)
+        PictureBox3.Size = New Size(130, 102)
         PictureBox3.SizeMode = PictureBoxSizeMode.Zoom
         PictureBox3.TabIndex = 6
         PictureBox3.TabStop = False
@@ -62,9 +65,10 @@ Partial Class Form4
         ' PictureBox1
         ' 
         PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
-        PictureBox1.Location = New Point(552, 388)
+        PictureBox1.Location = New Point(789, 647)
+        PictureBox1.Margin = New Padding(4, 5, 4, 5)
         PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(91, 61)
+        PictureBox1.Size = New Size(130, 102)
         PictureBox1.SizeMode = PictureBoxSizeMode.Zoom
         PictureBox1.TabIndex = 7
         PictureBox1.TabStop = False
@@ -72,9 +76,10 @@ Partial Class Form4
         ' PictureBox2
         ' 
         PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), Image)
-        PictureBox2.Location = New Point(468, 388)
+        PictureBox2.Location = New Point(669, 647)
+        PictureBox2.Margin = New Padding(4, 5, 4, 5)
         PictureBox2.Name = "PictureBox2"
-        PictureBox2.Size = New Size(91, 61)
+        PictureBox2.Size = New Size(130, 102)
         PictureBox2.SizeMode = PictureBoxSizeMode.Zoom
         PictureBox2.TabIndex = 8
         PictureBox2.TabStop = False
@@ -82,9 +87,10 @@ Partial Class Form4
         ' PictureBox4
         ' 
         PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), Image)
-        PictureBox4.Location = New Point(384, 388)
+        PictureBox4.Location = New Point(549, 647)
+        PictureBox4.Margin = New Padding(4, 5, 4, 5)
         PictureBox4.Name = "PictureBox4"
-        PictureBox4.Size = New Size(91, 61)
+        PictureBox4.Size = New Size(130, 102)
         PictureBox4.SizeMode = PictureBoxSizeMode.Zoom
         PictureBox4.TabIndex = 9
         PictureBox4.TabStop = False
@@ -92,9 +98,10 @@ Partial Class Form4
         ' PictureBox5
         ' 
         PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), Image)
-        PictureBox5.Location = New Point(297, 388)
+        PictureBox5.Location = New Point(424, 647)
+        PictureBox5.Margin = New Padding(4, 5, 4, 5)
         PictureBox5.Name = "PictureBox5"
-        PictureBox5.Size = New Size(91, 61)
+        PictureBox5.Size = New Size(130, 102)
         PictureBox5.SizeMode = PictureBoxSizeMode.Zoom
         PictureBox5.TabIndex = 10
         PictureBox5.TabStop = False
@@ -103,9 +110,10 @@ Partial Class Form4
         ' 
         Thanks.AutoSize = True
         Thanks.Font = New Font("Times New Roman", 30F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Thanks.Location = New Point(242, 63)
+        Thanks.Location = New Point(346, 105)
+        Thanks.Margin = New Padding(4, 0, 4, 0)
         Thanks.Name = "Thanks"
-        Thanks.Size = New Size(411, 45)
+        Thanks.Size = New Size(618, 68)
         Thanks.TabIndex = 11
         Thanks.Text = "Thanks for your Order"
         ' 
@@ -113,9 +121,10 @@ Partial Class Form4
         ' 
         Arabictext.AutoSize = True
         Arabictext.Font = New Font("Times New Roman", 30F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Arabictext.Location = New Point(338, 121)
+        Arabictext.Location = New Point(483, 202)
+        Arabictext.Margin = New Padding(4, 0, 4, 0)
         Arabictext.Name = "Arabictext"
-        Arabictext.Size = New Size(166, 45)
+        Arabictext.Size = New Size(249, 68)
         Arabictext.TabIndex = 12
         Arabictext.Text = "شكراً لطلبك"
         ' 
@@ -124,18 +133,20 @@ Partial Class Form4
         Label4.AutoSize = True
         Label4.BorderStyle = BorderStyle.Fixed3D
         Label4.Font = New Font("Times New Roman", 30F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label4.Location = New Point(297, 328)
+        Label4.Location = New Point(424, 547)
+        Label4.Margin = New Padding(4, 0, 4, 0)
         Label4.Name = "Label4"
-        Label4.Size = New Size(420, 47)
+        Label4.Size = New Size(631, 70)
         Label4.TabIndex = 13
         Label4.Text = "Geraldine Dream Pizza"
         ' 
         ' receipt
         ' 
         receipt.Font = New Font("Times New Roman", 15F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        receipt.Location = New Point(45, 197)
+        receipt.Location = New Point(64, 509)
+        receipt.Margin = New Padding(4, 5, 4, 5)
         receipt.Name = "receipt"
-        receipt.Size = New Size(133, 65)
+        receipt.Size = New Size(190, 108)
         receipt.TabIndex = 14
         receipt.Text = "View Order Receipt"
         receipt.UseVisualStyleBackColor = True
@@ -143,18 +154,31 @@ Partial Class Form4
         ' backmenu
         ' 
         backmenu.Font = New Font("Times New Roman", 15F, FontStyle.Bold)
-        backmenu.Location = New Point(45, 291)
+        backmenu.Location = New Point(64, 629)
+        backmenu.Margin = New Padding(4, 5, 4, 5)
         backmenu.Name = "backmenu"
-        backmenu.Size = New Size(133, 64)
+        backmenu.Size = New Size(190, 107)
         backmenu.TabIndex = 15
-        backmenu.Text = "Back to Menu"
+        backmenu.Text = "Back to Main Menu"
         backmenu.UseVisualStyleBackColor = True
+        ' 
+        ' menubutton
+        ' 
+        menubutton.Font = New Font("Times New Roman", 15F, FontStyle.Bold)
+        menubutton.Location = New Point(64, 382)
+        menubutton.Margin = New Padding(4, 5, 4, 5)
+        menubutton.Name = "menubutton"
+        menubutton.Size = New Size(190, 107)
+        menubutton.TabIndex = 16
+        menubutton.Text = "Back to Menu"
+        menubutton.UseVisualStyleBackColor = True
         ' 
         ' Form4
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
+        ClientSize = New Size(1143, 750)
+        Controls.Add(menubutton)
         Controls.Add(backmenu)
         Controls.Add(receipt)
         Controls.Add(Label4)
@@ -166,6 +190,7 @@ Partial Class Form4
         Controls.Add(PictureBox1)
         Controls.Add(PictureBox3)
         Controls.Add(Label3)
+        Margin = New Padding(4, 5, 4, 5)
         Name = "Form4"
         Text = "Form4"
         CType(PictureBox3, ComponentModel.ISupportInitialize).EndInit()
@@ -187,4 +212,5 @@ Partial Class Form4
     Friend WithEvents Label4 As Label
     Friend WithEvents receipt As Button
     Friend WithEvents backmenu As Button
+    Friend WithEvents menubutton As Button
 End Class

@@ -32,6 +32,7 @@ Partial Class Form1
         PictureBox1 = New PictureBox()
         pickup = New Button()
         delivery = New Button()
+        subtitle = New Label()
         CType(flag, ComponentModel.ISupportInitialize).BeginInit()
         CType(Flag2, ComponentModel.ISupportInitialize).BeginInit()
         CType(Iran, ComponentModel.ISupportInitialize).BeginInit()
@@ -47,14 +48,14 @@ Partial Class Form1
         title.BorderStyle = BorderStyle.Fixed3D
         title.Location = New Point(21, 46)
         title.Name = "title"
-        title.Size = New Size(420, 47)
+        title.Size = New Size(631, 70)
         title.TabIndex = 1
         title.Text = "Geraldine Dream Pizza"
         ' 
         ' flag
         ' 
         flag.Image = CType(resources.GetObject("flag.Image"), Image)
-        flag.Location = New Point(653, 113)
+        flag.Location = New Point(766, 113)
         flag.Name = "flag"
         flag.Size = New Size(91, 61)
         flag.SizeMode = PictureBoxSizeMode.Zoom
@@ -64,7 +65,7 @@ Partial Class Form1
         ' Flag2
         ' 
         Flag2.Image = CType(resources.GetObject("Flag2.Image"), Image)
-        Flag2.Location = New Point(556, 113)
+        Flag2.Location = New Point(669, 113)
         Flag2.Name = "Flag2"
         Flag2.Size = New Size(91, 61)
         Flag2.SizeMode = PictureBoxSizeMode.Zoom
@@ -74,7 +75,7 @@ Partial Class Form1
         ' Iran
         ' 
         Iran.Image = CType(resources.GetObject("Iran.Image"), Image)
-        Iran.Location = New Point(750, 46)
+        Iran.Location = New Point(863, 46)
         Iran.Name = "Iran"
         Iran.Size = New Size(91, 61)
         Iran.SizeMode = PictureBoxSizeMode.Zoom
@@ -84,7 +85,7 @@ Partial Class Form1
         ' pciture4
         ' 
         pciture4.Image = CType(resources.GetObject("pciture4.Image"), Image)
-        pciture4.Location = New Point(653, 46)
+        pciture4.Location = New Point(766, 46)
         pciture4.Name = "pciture4"
         pciture4.Size = New Size(91, 61)
         pciture4.SizeMode = PictureBoxSizeMode.Zoom
@@ -94,7 +95,7 @@ Partial Class Form1
         ' FlLAG3
         ' 
         FlLAG3.Image = CType(resources.GetObject("FlLAG3.Image"), Image)
-        FlLAG3.Location = New Point(556, 46)
+        FlLAG3.Location = New Point(669, 46)
         FlLAG3.Name = "FlLAG3"
         FlLAG3.Size = New Size(91, 61)
         FlLAG3.SizeMode = PictureBoxSizeMode.Zoom
@@ -104,36 +105,48 @@ Partial Class Form1
         ' PictureBox1
         ' 
         PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
-        PictureBox1.Location = New Point(750, 122)
+        PictureBox1.Location = New Point(863, 113)
         PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(91, 52)
+        PictureBox1.Size = New Size(91, 61)
         PictureBox1.SizeMode = PictureBoxSizeMode.Zoom
         PictureBox1.TabIndex = 16
         PictureBox1.TabStop = False
         ' 
         ' pickup
         ' 
-        pickup.Location = New Point(74, 242)
+        pickup.Location = New Point(58, 254)
         pickup.Name = "pickup"
-        pickup.Size = New Size(192, 106)
+        pickup.Size = New Size(325, 106)
         pickup.TabIndex = 17
         pickup.Text = "Pick up?"
         pickup.UseVisualStyleBackColor = True
         ' 
         ' delivery
         ' 
-        delivery.Location = New Point(367, 242)
+        delivery.Location = New Point(458, 254)
         delivery.Name = "delivery"
-        delivery.Size = New Size(215, 106)
+        delivery.Size = New Size(302, 106)
         delivery.TabIndex = 18
         delivery.Text = "Delivery?"
         delivery.UseVisualStyleBackColor = True
         ' 
+        ' subtitle
+        ' 
+        subtitle.AutoSize = True
+        subtitle.BackColor = SystemColors.Control
+        subtitle.Font = New Font("Times New Roman", 20F, FontStyle.Bold)
+        subtitle.Location = New Point(21, 129)
+        subtitle.Name = "subtitle"
+        subtitle.Size = New Size(378, 45)
+        subtitle.TabIndex = 19
+        subtitle.Text = "Middle Eastern Style"
+        ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(24F, 45F)
+        AutoScaleDimensions = New SizeF(36F, 68F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(847, 414)
+        ClientSize = New Size(966, 450)
+        Controls.Add(subtitle)
         Controls.Add(delivery)
         Controls.Add(pickup)
         Controls.Add(PictureBox1)
@@ -166,5 +179,6 @@ Partial Class Form1
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents pickup As Button
     Friend WithEvents delivery As Button
+    Friend WithEvents subtitle As Label
 
 End Class

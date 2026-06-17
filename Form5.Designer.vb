@@ -67,7 +67,7 @@ Partial Class Form5
         ' 
         pizzatitle.AutoSize = True
         pizzatitle.Font = New Font("Times New Roman", 15F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        pizzatitle.Location = New Point(310, 109)
+        pizzatitle.Location = New Point(319, 109)
         pizzatitle.Name = "pizzatitle"
         pizzatitle.Size = New Size(92, 35)
         pizzatitle.TabIndex = 2
@@ -77,7 +77,7 @@ Partial Class Form5
         ' 
         quanitiestitle.AutoSize = True
         quanitiestitle.Font = New Font("Times New Roman", 15F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        quanitiestitle.Location = New Point(595, 109)
+        quanitiestitle.Location = New Point(676, 109)
         quanitiestitle.Name = "quanitiestitle"
         quanitiestitle.Size = New Size(135, 35)
         quanitiestitle.TabIndex = 3
@@ -87,7 +87,7 @@ Partial Class Form5
         ' 
         costtitle.AutoSize = True
         costtitle.Font = New Font("Times New Roman", 15F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        costtitle.Location = New Point(884, 109)
+        costtitle.Location = New Point(1001, 109)
         costtitle.Name = "costtitle"
         costtitle.Size = New Size(74, 35)
         costtitle.TabIndex = 4
@@ -97,7 +97,7 @@ Partial Class Form5
         ' 
         totalcosttitle.AutoSize = True
         totalcosttitle.Font = New Font("Times New Roman", 15F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        totalcosttitle.Location = New Point(26, 354)
+        totalcosttitle.Location = New Point(26, 497)
         totalcosttitle.Name = "totalcosttitle"
         totalcosttitle.Size = New Size(146, 35)
         totalcosttitle.TabIndex = 5
@@ -127,7 +127,7 @@ Partial Class Form5
         ' 
         Totalcost.AutoSize = True
         Totalcost.Font = New Font("Times New Roman", 15F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Totalcost.Location = New Point(26, 404)
+        Totalcost.Location = New Point(26, 551)
         Totalcost.Name = "Totalcost"
         Totalcost.Size = New Size(55, 35)
         Totalcost.TabIndex = 8
@@ -137,7 +137,7 @@ Partial Class Form5
         ' 
         Costseachpizza.AutoSize = True
         Costseachpizza.Font = New Font("Times New Roman", 15F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Costseachpizza.Location = New Point(884, 177)
+        Costseachpizza.Location = New Point(1001, 177)
         Costseachpizza.Name = "Costseachpizza"
         Costseachpizza.Size = New Size(55, 35)
         Costseachpizza.TabIndex = 9
@@ -147,7 +147,7 @@ Partial Class Form5
         ' 
         Quanities.AutoSize = True
         Quanities.Font = New Font("Times New Roman", 15F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Quanities.Location = New Point(595, 177)
+        Quanities.Location = New Point(676, 177)
         Quanities.Name = "Quanities"
         Quanities.Size = New Size(55, 35)
         Quanities.TabIndex = 10
@@ -157,7 +157,7 @@ Partial Class Form5
         ' 
         Pizzas.AutoSize = True
         Pizzas.Font = New Font("Times New Roman", 15F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Pizzas.Location = New Point(310, 177)
+        Pizzas.Location = New Point(319, 177)
         Pizzas.Name = "Pizzas"
         Pizzas.Size = New Size(55, 35)
         Pizzas.TabIndex = 11
@@ -176,7 +176,7 @@ Partial Class Form5
         ' Print
         ' 
         Print.Font = New Font("Times New Roman", 15F, FontStyle.Bold)
-        Print.Location = New Point(801, 370)
+        Print.Location = New Point(804, 463)
         Print.Name = "Print"
         Print.Size = New Size(202, 102)
         Print.TabIndex = 13
@@ -199,7 +199,7 @@ Partial Class Form5
         ' Printpreview
         ' 
         Printpreview.Font = New Font("Times New Roman", 15F, FontStyle.Bold)
-        Printpreview.Location = New Point(576, 370)
+        Printpreview.Location = New Point(537, 463)
         Printpreview.Name = "Printpreview"
         Printpreview.Size = New Size(202, 102)
         Printpreview.TabIndex = 14
@@ -210,7 +210,7 @@ Partial Class Form5
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1015, 499)
+        ClientSize = New Size(1154, 637)
         Controls.Add(Printpreview)
         Controls.Add(Print)
         Controls.Add(Deliverydetail)

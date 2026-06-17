@@ -83,7 +83,7 @@ Public Class Form3
 
         Next
 
-        Total += Form2.Delivery
+        Total += Receipt.Delivery
 
         totaltext.Text = Total.ToString("C") 'make grand total appear on label with currency
 
@@ -104,7 +104,7 @@ Public Class Form3
 
         Next
 
-        Total += Form2.Delivery
+        Total += Receipt.Delivery
 
         totaltext.Text = Total.ToString("C") 'make grand total appear on label with currency
 
@@ -116,8 +116,13 @@ Public Class Form3
 
 
     Private Sub complete_Click(sender As Object, e As EventArgs) Handles complete.Click
-        Me.Hide() 'Hide the order menu
-        Form4.Show() 'Show the final order menu
+        If Receipt.Pizzas.Count = 0 Then 'If the pizza list is empty then do this:
+            MsgBox("Must enter a pizza") 'Create message box displaying the text
+        Else 'Otherwise
+            Me.Hide() 'Hide the order menu
+            Form4.Show() 'Show the final order menu
+        End If 'End the if statement
+
     End Sub
 
     Private Sub menubutton_Click(sender As Object, e As EventArgs) Handles menbutton.Click
