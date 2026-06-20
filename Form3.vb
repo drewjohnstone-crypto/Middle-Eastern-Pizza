@@ -1,7 +1,8 @@
 ﻿Imports System.Drawing.Text
 Imports System.Net.Mail
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement
-Imports Middle_Eastern_Pizza.Form2
+Imports Middle_Eastern_Pizza.Form6
+
 
 Public Class Form3
     Dim Menu1(2, 13) As String
