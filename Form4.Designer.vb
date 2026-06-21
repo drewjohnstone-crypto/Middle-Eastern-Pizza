@@ -32,7 +32,7 @@ Partial Class Form4
         Thanks = New Label()
         Arabictext = New Label()
         Label4 = New Label()
-        receipt = New Button()
+        summary = New Button()
         backmenu = New Button()
         menubutton = New Button()
         CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
@@ -140,16 +140,16 @@ Partial Class Form4
         Label4.TabIndex = 13
         Label4.Text = "Geraldine Dream Pizza"
         ' 
-        ' receipt
+        ' summary
         ' 
-        receipt.Font = New Font("Times New Roman", 15F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        receipt.Location = New Point(64, 509)
-        receipt.Margin = New Padding(4, 5, 4, 5)
-        receipt.Name = "receipt"
-        receipt.Size = New Size(190, 108)
-        receipt.TabIndex = 14
-        receipt.Text = "View Order Receipt"
-        receipt.UseVisualStyleBackColor = True
+        summary.Font = New Font("Times New Roman", 15F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        summary.Location = New Point(64, 509)
+        summary.Margin = New Padding(4, 5, 4, 5)
+        summary.Name = "summary"
+        summary.Size = New Size(190, 108)
+        summary.TabIndex = 14
+        summary.Text = "View Order Receipt"
+        summary.UseVisualStyleBackColor = True
         ' 
         ' backmenu
         ' 
@@ -180,7 +180,7 @@ Partial Class Form4
         ClientSize = New Size(1143, 750)
         Controls.Add(menubutton)
         Controls.Add(backmenu)
-        Controls.Add(receipt)
+        Controls.Add(summary)
         Controls.Add(Label4)
         Controls.Add(Arabictext)
         Controls.Add(Thanks)
@@ -210,7 +210,7 @@ Partial Class Form4
     Friend WithEvents Thanks As Label
     Friend WithEvents Arabictext As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents receipt As Button
+    Friend WithEvents summary As Button
     Friend WithEvents backmenu As Button
     Friend WithEvents menubutton As Button
 End Class

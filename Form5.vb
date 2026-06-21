@@ -31,7 +31,7 @@ Public Class Form5
 
 
     Private Sub Backtomenu_Click(sender As Object, e As EventArgs) Handles Backtomenu.Click
-        Me.Hide()
+        Me.Close()
         Form3.Show()
 
     End Sub
@@ -55,4 +55,6 @@ Public Class Form5
         e.Graphics.DrawImage(printer, 0, 0)
 
     End Sub
+
+
 End Class

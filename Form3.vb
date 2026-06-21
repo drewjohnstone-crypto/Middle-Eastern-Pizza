@@ -143,9 +143,9 @@ Public Class Form3
         'get quanity and store in array
         Menu1(2, 1) = Val(seacombobox.Text)
         'Calculate and display line total
-        Receipt.Pizzas.Add("Straight from the Sea")
-        Receipt.PizzaQuanity.Add(Val(seacombobox.Text))
-        Receipt.PizzaCost.Add(Menu1(1, 1) * Menu1(2, 1))
+        Receipt.Pizzas.Add("Straight from the Sea") 'stores the pizza onto the receipt list
+        Receipt.PizzaQuanity.Add(Val(seacombobox.Text)) 'stores the quanity onto the receipt list
+        Receipt.PizzaCost.Add(Menu1(1, 1) * Menu1(2, 1)) 'stores the cost onto the receipt list
         Totalnew()
 
 

@@ -1,15 +1,18 @@
-﻿Public Class Form4
+﻿
+
+Public Class Form4
     Private Sub backmenu_Click(sender As Object, e As EventArgs) Handles backmenu.Click
         Application.Restart()
         Form1.Show()
     End Sub
 
-    Private Sub receipt_Click(sender As Object, e As EventArgs) Handles receipt.Click
+    Private Sub receipt_Click(sender As Object, e As EventArgs) Handles summary.Click
         Me.Hide()
         Form5.Show()
     End Sub
 
     Private Sub menubutton_Click(sender As Object, e As EventArgs) Handles menubutton.Click
+
         Me.Close()
         Form3.Show()
     End Sub
