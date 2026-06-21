@@ -1,5 +1,5 @@
 ﻿Imports System.Numerics
-Imports System.Windows.Forms.VisualStyles
+Imports System.Windows.Forms.VisualStyles6
 
 Public Class Receipt 'make a class for the summary
 
