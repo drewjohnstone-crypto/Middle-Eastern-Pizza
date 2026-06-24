@@ -117,7 +117,7 @@ Public Class Form3
 
 
     Private Sub complete_Click(sender As Object, e As EventArgs) Handles complete.Click
-        If Receipt.Pizzas.Count = 0 Then 'If the pizza list is empty then do this:
+        If Total = 0 Or Total = 3 Then 'If the total is 3 or 0 dollars then do this:
             MsgBox("Must enter a pizza") 'Create message box displaying the text
         Else 'Otherwise
             Me.Hide() 'Hide the order menu
