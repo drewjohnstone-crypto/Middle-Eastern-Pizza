@@ -53,11 +53,11 @@ Public Class Form5
     Private Sub PrintDocument_PrintPage(sender As Object, e As PrintPageEventArgs) Handles PrintDocument.PrintPage
         Dim Heading As New Font("Times New Roman", 20, FontStyle.Bold)
         Dim Details As New Font("Times New Roman", 10, FontStyle.Bold)
-        e.Graphics.DrawString(Label1.Text, Heading, 5, 5)
-        e.Graphics.DrawString(costtitle, Heading)
-        e.Graphics.DrawString(quanitiestitle, Heading, )
-        e.Graphics.DrawString(pizzatitle, Heading)
-        e.Graphics.DrawString(Customerdetailstitle, Heading)
+        'e.Graphics.DrawString(Label1.Text, Heading, 5, 5)
+        ' e.Graphics.DrawString(costtitle, Heading)
+        ' e.Graphics.DrawString(quanitiestitle, Heading, )
+        ' e.Graphics.DrawString(pizzatitle, Heading)
+        ' e.Graphics.DrawString(Customerdetailstitle, Heading)
 
         e.Graphics.DrawImage(printer, 0, 0)
 
