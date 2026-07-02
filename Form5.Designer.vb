@@ -40,6 +40,8 @@ Partial Class Form5
         PrintDocument = New Printing.PrintDocument()
         PrintPreviewDialog = New PrintPreviewDialog()
         Printpreview = New Button()
+        Logo = New PictureBox()
+        CType(Logo, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Label1
@@ -206,11 +208,22 @@ Partial Class Form5
         Printpreview.Text = "Print Preview"
         Printpreview.UseVisualStyleBackColor = True
         ' 
+        ' Logo
+        ' 
+        Logo.Image = CType(resources.GetObject("Logo.Image"), Image)
+        Logo.Location = New Point(609, 12)
+        Logo.Name = "Logo"
+        Logo.Size = New Size(105, 85)
+        Logo.SizeMode = PictureBoxSizeMode.Zoom
+        Logo.TabIndex = 15
+        Logo.TabStop = False
+        ' 
         ' Form5
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1154, 674)
+        Controls.Add(Logo)
         Controls.Add(Printpreview)
         Controls.Add(Print)
         Controls.Add(Deliverydetail)
@@ -228,6 +241,7 @@ Partial Class Form5
         Controls.Add(Label1)
         Name = "Form5"
         Text = "Form5"
+        CType(Logo, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -249,4 +263,5 @@ Partial Class Form5
     Friend WithEvents PrintDocument As Printing.PrintDocument
     Friend WithEvents PrintPreviewDialog As PrintPreviewDialog
     Friend WithEvents Printpreview As Button
+    Friend WithEvents Logo As PictureBox
 End Class
